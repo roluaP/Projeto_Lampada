@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+    <html lang="pt-br">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Exercício Lâmpada</title>
+            <link rel="stylesheet" href="css/estilo.css">
+        </head>
+
+            <body>
+                <img id="lampada" src="imagens/lampada-off.png" alt="Lâmpada Desligada">
+                <div>
+                    <button  id="acenderLampada">Acender</button>
+                    <button id="apagarLampada">Apagar</button>
+                    <button  id="trocarLampada">Trocar Lâmpada</button>
+                </div>
+            
+                <script>
+                    // Escutador de eventos
+                    lampada.addEventListener("click", quebrar);
+                    acenderLampada.addEventListener("click", acender);
+                    apagarLampada.addEventListener("click", apagar);
+                    trocarLampada.addEventListener("click", trocar);
+
+                    // Funções
+                    function quebrar() {
+                        lampada.setAttribute("src", "./imagens/lampada-quebrada.png");
+                    }
+                    
+                    function acender() {
+                        lampada.setAttribute("src", "./imagens/lampada-on.png");
+                    }
+
+                    function apagar() {
+                        lampada.setAttribute("src", "./imagens/lampada-off.png");
+                    }
+
+                    function trocar() {
+                        lampada.setAttribute("src", "./imagens/lampada-off.png");
+                    }
+                </script>
+
+            </body>
+
+    </html>
